@@ -1,13 +1,27 @@
 html {
   font-family: 'Fredoka One', sans-serif;
-  background-image: image();
+  border-top: 10px ;
+  background-color: #b3fbff;
 }
 
+h1 {
+  color: #990073;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  transform: rotate(-10deg);
+}
+
+p {
+  color: #c09;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  transform: rotate(-5deg);
+}
 
 a{
   text-decoration: none;
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  color: #c09;
 }
+
 .btn-ghost{
   border-color: #990073;
 }
