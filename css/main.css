@@ -1,3 +1,18 @@
 html {
   font-family: 'Fredoka One', sans-serif;
+  background-image: image();
+}
+
+
+a{
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+.btn-ghost{
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  background-color: #d4fdff;
+  border-color: #990073;
 }
