@@ -1,32 +1,163 @@
 html {
-  font-family: 'Fredoka One', sans-serif;
-  border-top: 10px ;
-  background-color: #b3fbff;
+  font-family: "Fredoka One", sans-serif;
+  background: repeating-linear-gradient(to top left, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  border-top: 10px #b3fbff solid;
 }
 
 h1 {
   color: #990073;
+  transform: rotate(-10.5deg);
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
-  transform: rotate(-10deg);
+  left: 50px;
+  top: 70px;
 }
 
 p {
   color: #c09;
+  max-width: 19em;
+  transform: rotate(-5.5deg);
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
-  transform: rotate(-5deg);
+  margin-top: 3.5em;
 }
 
-a{
+a {
+  color: #c09;
   text-decoration: none;
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
-  color: #c09;
 }
 
-.btn-ghost{
+.btn-ghost {
   border-color: #990073;
 }
 
 .btn-ghost:hover {
   background-color: #d4fdff;
   border-color: #990073;
+}
+
+.cherry {
+  animation: cherry-drop .5s linear forwards;
+  animation-delay: 2s;
+  width: 180px;
+  z-index: 5;
+  left: 65px;
+  top: -200px;
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: -45px;
+  }
+
+}
+
+.vanilla {
+  animation: vanilla-drop .5s linear forwards;
+  animation-delay: 1.5s;
+  width: 180px;
+  z-index: 4;
+  left: 60px;
+  top: -200px;
+}
+
+@keyframes vanilla-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 35px;
+  }
+
+}
+
+.chocolate {
+  animation: chocolate-drop .5s linear forwards;
+  animation-delay: 1s;
+  width: 180px;
+  z-index: 3;
+  left: 75px;
+  top: -200px;
+}
+
+@keyframes chocolate-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 110px;
+  }
+
+}
+
+.mint {
+  animation: mint-drop .5s linear forwards;
+  animation-delay: .5s;
+  width: 180px;
+  z-index: 1;
+  left: 70px;
+  top: -200px;
+}
+
+@keyframes mint-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 190px;
+  }
+
+}
+
+.cone {
+  animation: cone-drop .5s linear forwards;
+  width: 180px;
+  z-index: 2;
+  left: 70px;
+  top: -200px;
+}
+
+@keyframes cone-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 300px;
+  }
+
+}
+
+.text {
+  animation: text-appear .5s linear forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+@keyframes text-appear {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 100;
+    filter: blur(0);
+  }
+
 }
